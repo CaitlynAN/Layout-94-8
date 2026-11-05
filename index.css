@@ -1,0 +1,675 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* style header */
+.header{
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+}
+/* style untuk navigator menu */
+.topnav{
+    overflow: hidden;
+    background-color: pink;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: saddlebrown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: beige;
+    color: saddlebrown;
+}
+/* style pada content */
+.column{
+    float: left;
+    padding: 10px;
+}
+.column.side{
+    width: 25%;
+}
+.column.middle{
+    width: 50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* biodata */
+body{
+    background-image: url("wallpaper.png");
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    background-color: rgb(255, 206, 142);
+    color: rgb(102, 34, 4);
+    text-align: center;
+}
+
+h1{
+    background-color: bisque;
+    color: saddlebrown;
+    text-align: center;
+    width: 50%;
+    margin: 30px auto;
+    border-radius: 20%;
+}
+
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: rgb(166, 87, 53);
+    color: aliceblue;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid aliceblue;
+}
+
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.foto img.bottom{
+    opacity: 0; 
+    z-index: 1;
+}
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+
+div.Hobi{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+img{
+    padding: 10px;
+}
+
+div.musik{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.musik:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.buku{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.buku:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.crochet{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.crochet:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.game{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.game:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.lagu{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.lagu:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+
+
+div.Makanan{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+img{
+    padding: 10px;
+}
+
+div.bibimbap{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.bibimbap:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.tendon{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.tendon:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.risotto{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.risotto:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.bitterballen{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.bitterballen:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.nasikucing{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.nasikucing:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.churros{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.churros:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+
+
+div.Minuman{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+img{
+    padding: 10px;
+}
+
+div.air{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.air:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.boba{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.boba:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.matcha{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.matcha:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.chocolate{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.chocolate:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.susu{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+
+div.susu:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+
+
+div.Film{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+img{
+    padding: 10px;
+}
+
+div.phm{
+    width: 250px;
+    height: 380px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.phm-photo-video{
+    position: relative;
+    width: 210px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0;
+}
+.phm-photo-video img, .phm-photo-video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.2s ease;
+}
+.phm-photo-video img{
+    opacity: 1;
+}
+.phm-photo-video video{
+    opacity: 0;
+}
+.phm-photo-video:hover img{
+    opacity: 0;
+}
+.phm-photo-video:hover video{
+    opacity: 1;
+}
+
+div.gotg{
+    width: 250px;
+    height: 380px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gotg-photo-video{
+    position: relative;
+    width: 210px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0;
+}
+.gotg-photo-video img, .gotg-photo-video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.2s ease;
+}
+.gotg-photo-video img{
+    opacity: 1;
+}
+.gotg-photo-video video{
+    opacity: 0;
+}
+.gotg-photo-video:hover img{
+    opacity: 0;
+}
+.gotg-photo-video:hover video{
+    opacity: 1;
+}
+
+div.bnd{
+    width: 250px;
+    height: 380px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bnd-photo-video{
+    position: relative;
+    width: 210px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0;
+}
+.bnd-photo-video img, .bnd-photo-video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.2s ease;
+}
+.bnd-photo-video img{
+    opacity: 1;
+}
+.bnd-photo-video video{
+    opacity: 0;
+}
+.bnd-photo-video:hover img{
+    opacity: 0;
+}
+.bnd-photo-video:hover video{
+    opacity: 1;
+}
+
+div.wha{
+    width: 250px;
+    height: 380px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wha-photo-video{
+    position: relative;
+    width: 210px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0;
+}
+.wha-photo-video img, .wha-photo-video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.2s ease;
+}
+.wha-photo-video img{
+    opacity: 1;
+}
+.wha-photo-video video{
+    opacity: 0;
+}
+.wha-photo-video:hover img{
+    opacity: 0;
+}
+.wha-photo-video:hover video{
+    opacity: 1;
+}
+
+div.apothecary{
+    width: 250px;
+    height: 380px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 coral;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.apothecary-photo-video{
+    position: relative;
+    width: 210px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0;
+}
+.apothecary-photo-video img, .apothecary-photo-video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.2s ease;
+}
+.apothecary-photo-video img{
+    opacity: 1;
+}
+.apothecary-photo-video video{
+    opacity: 0;
+}
+.apothecary-photo-video:hover img{
+    opacity: 0;
+}
+.apothecary-photo-video:hover video{
+    opacity: 1;
+}
+
+
+
+
+/* style pada table */
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    width: 70%;
+}
+th, td{
+    padding: 5px;
+}
+tr{
+    background-color: bisque;
+}
+tr:nth-child(.even){
+    background-color: azure;
+}
+tr:hover{
+    background-color: darksalmon;
+}
+
+
+
+
+
+
+.footer{
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+}
